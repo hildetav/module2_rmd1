@@ -1,0 +1,78 @@
+---
+title: "Coursera Rmd - module 2 - doc 1"
+author: "Hilde Taverne"
+date: "26 november 2018"
+output:
+  html_document: default
+  word_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# This is a level 1 header
+
+## R Markdown
+
+### This is a level 3 header
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+Here is a link to [GOOGLE](http://google.com)
+
+Here is a word in **bold** and a word in __bold__. 
+
+Here is a word in *italics* and a word in _italics_. 
+
+When we compile our document, we are using the `rmarkdown` package.
+
+Here are some example R commands: 
+```
+2+2
+mean(c(1,2,3,4))
+```
+
+Non-numbered list:
+
+* Breakfast
+    - food
+        + eggs
+        + toast
+
+Numbered list: 
+
+1. List
+    a. item a 
+    b. item b
+        i. subitem i
+        ii. subitem ii
+
+Example of a block quote: 
+
+> This is a block quote
+> Bla bla 
+>
+> 1. List within block quote:
+> 2. Second line
+
+Example of a nested block quote: 
+
+> > This text is nested.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
