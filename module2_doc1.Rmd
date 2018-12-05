@@ -3,13 +3,14 @@ title: "Coursera Rmd - module 2 - doc 1"
 author: "Hilde Taverne"
 date: "26 november 2018"
 output:
-  word_document: default
-  pdf_document: default
   html_document: default
+  pdf_document: default
+  word_document: default
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(vembedr)
 ```
 
 # This is a level 1 header
@@ -104,14 +105,18 @@ Here is an image inserted
 
 ## Insert animated GIF and video
 
-![sunstar gif](sunstar.gif) # werkt alleen voor html
-![sunstar video](sunstar.mp4) # werkt alleen voor html
+![gifjes zijn leuk](giphy.gif) 
+![sunstar video](sunstar.mp4) 
+
+Here's a video using vembedr
+
+embed_youtube("https://www.youtube.com/watch?v=ExxN2Kzr4vQ") 
 
 ## Insert test with some footnotes
 
-Here is a footnote reference [^1] and another [^2]
+Here is a footnote reference [^1] and another [^longnote]
 
 Here is an inline footnote ^[Inline notes are easier to write since you don't have to pick an identifier and move down to write the note]
 
 [^1]: Here is the footnote.
-[^2] Here's one with multiple blocks.
+[^longnote]: Here's one with multiple blocks.
